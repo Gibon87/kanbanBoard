@@ -110,7 +110,7 @@ $(function() {
 // Tworzenie domyślnych kart i kolumn
 
 	// TWORZENIE KOLUMN
-	var todoColumn = new Column('To do');
+	var todoColumn = new Column('To Do');
 	var doingColumn = new Column('Doing');
 	var doneColumn = new Column('Done');
 
