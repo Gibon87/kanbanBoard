@@ -48,6 +48,7 @@ button.create-column {
   min-height: 400px;
   min-width: 400px;
   margin: 20px auto;
+	border-radius: 2px;
 }
 
 h2.column-title {
