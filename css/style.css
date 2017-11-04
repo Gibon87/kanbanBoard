@@ -21,6 +21,10 @@ body {
 	padding: 20px;
   margin: 40px;
 }
+h1 span {
+	background: #E13434;
+	padding: 2px 10px;
+}
 .column-container {
   display: flex;
 	justify-content: flex-start;
@@ -31,7 +35,7 @@ button.create-column {
   display: flex;
   margin: 20px auto;
   background: transparent;
-  border: 1px solid #F4F6F1;
+  border: 2px solid #E13434;
   color: #F4F6F1;
   font-size: 20px;
   padding: 10px 20px;
@@ -40,7 +44,7 @@ button.create-column {
 .column {
   display: flex;
   align-items: flex-start;
-  border: 2px solid #F4F6F1;
+  border: 3px solid #E13434;
   min-height: 400px;
   min-width: 400px;
   margin: 20px auto;
@@ -55,7 +59,7 @@ h2.column-title {
 }
 button.add-card {
   font-size: 16px;
-  border: 2px solid #F4F6F1;
+  border: 2px solid #E13434;
   background: transparent;
   color: #F4F6F1;
   margin: 14px auto;
@@ -83,7 +87,7 @@ li.card {
   left: 0;
   margin: 20px;
   width: 360px;
-  border: 1px solid #F4F6F1;
+  border: 2px solid #F4F6F1;
 }
 p.card-description {
   margin: 20px;
