@@ -1,109 +1,102 @@
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 }
 body {
 	background-color: #000000;
   background-image: linear-gradient(160deg, #000000 0%, #3b404e 127%);
-  color: black;
+  color: #fff;
 	font-size: 16px;
 	font-family: sans-serif;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+  overflow: auto;
 }
 .board {
-	height: 100vh;
-	margin: 20px;
+	min-height: 100vh;
+	margin: 20px 0;
 }
-.create-column {
-	display: block;
-	width: 200px;
-	color: white;
-	padding:5px 20px;
-	font-size: 20px;
-	cursor: pointer;
-	margin: 30px auto;
-	border-radius: 2px;
-  background: transparent;
-}
-.column-title {
-	display: inline-block;
-}
-.column {
-	color: white;
-	width: 400px;
-  float: left;
-	margin: 10px;
-	padding: 20px;
-	background-color: transparent;
-	border: 2px solid white;
-	border-radius: 2px;
-}
-
-.btn-center {
-  margin-left: 50%;
-  margin-bottom: 30px;
-  transform: translateX(-50%);
-}
-.btn-add {
-	background-color: #f78a8a;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	border-radius: 2px;
-}
-.column-card-list, ul {
-	min-height: 200px;
-	margin: 0;
-	margin-top: 20px;
-	padding: 0;
-}
-.btn-delete {
-	float: right;
-	background: transparent;
-	border: 2px solid white;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	margin: 8px 12px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 20px;
-}
-li {
-	list-style-type: none;
-	margin-top: 20px;
-}
-h1 {
+.board h1 {
+  font-weight: bold;
 	text-align: center;
 	color: #FFF;
 	font-size: 4em;
-	margin: 20px;
 	padding: 20px;
+  margin: 40px;
 }
-.card-description {
-	padding: 15px;
-	border: 2px solid;
-	background: transparent;
-	color: white;
-	cursor: pointer;
-	font-size: 20px;
-	border-radius: 10px;
+.column-container {
+  display: flex;
+	justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.add-card {
-	margin: 10px 50px;
-	font-size: 14px;
-	color: white;
-	padding: 5px 20px;
-	cursor: pointer;
-	background-color: transparent;
-	border: 2px solid white;
-	border-radius: 10px;
+button.create-column {
+  display: flex;
+  margin: 20px auto;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.column {
+  display: flex;
+  align-items: flex-start;
+  border: 2px solid #fff;
+  min-height: 400px;
+  min-width: 400px;
+  margin: 20px auto;
+}
+
+h2.column-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 14px 16px;
+  order: 1;
+  justify-content: flex-start;
+}
+button.add-card {
+  font-size: 16px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  margin: 14px auto;
+  padding: 4px 18px;
+  order: 2;
+  cursor: pointer;
+}
+button.btn-delete {
+  margin: 14px 28px;
+  order: 3;
+  border: 2px solid white;
+  border-radius: 2px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+ul.column-card-list.ui-sortable {
+  height: 0;
+  width: 0;
+}
+li.card {
+  display: flex;
+  position: relative;
+  top: 80px;
+  left: 0;
+  margin: 20px;
+  width: 360px;
+  border: 1px solid #fff;
+}
+p.card-description {
+  margin: 20px;
+  overflow: auto;
+  height: auto;
+}
+button.btn-delete-2 {
+  cursor: pointer;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 2px;
+  background: transparent;
+  color: #fff;
+  top: 8px;
+  right: 12px;
 }

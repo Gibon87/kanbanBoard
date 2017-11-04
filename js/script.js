@@ -63,7 +63,7 @@ $(function() {
 		function createCard() {
 			var $card = $('<li>').addClass('card'),
 				$cardDescription = $('<p>').addClass('card-description').text(self.description),
-				$cardDelete = $('<button>').addClass('btn-delete').text('X');
+				$cardDelete = $('<button>').addClass('btn-delete-2').text('X');
 			$cardDelete.click(function(){
         			self.removeCard();
 			});
