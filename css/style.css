@@ -1,24 +1,77 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-	background-color: #000000;
+  margin: 0;
+  background-color: #000000;
   background-image: linear-gradient(160deg, #000000 0%, #3b404e 127%);
   color: #F4F6F1;
 	font-size: 16px;
 	font-family: sans-serif;
-  overflow: auto;
 }
+.ui-sortable {
+  min-height: 80px;
+  padding: 0;
+}
+button.create-column {
+  display: flex;
+	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  background: transparent;
+  border: 2px solid #E13434;
+  color: #F4F6F1;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+button.change-name {
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  border: 2px solid #E13434;
+  background: transparent;
+  color: #F4F6F1;
+  margin: 12px 18px;
+  padding: 6px 18px;
+  order: 3;
+  cursor: pointer;
+}
+button.add-card {
+  float: right;
+	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  border: 2px solid #E13434;
+  background: transparent;
+  color: #F4F6F1;
+  margin: 12px 18px;
+  padding: 6px 18px;
+  order: 2;
+  cursor: pointer;
+}
+.btn-delete {
+  cursor: pointer;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  margin: 14px 28px;
+  border: 2px solid #F4F6F1;
+  border-radius: 2px;
+  background: transparent;
+  color: #F4F6F1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background-color: rgba(0,0,0,0.4);
+}
+/* BOARD */
 .board {
-	min-height: 100vh;
-	margin: 20px 0;
+  min-height: 100vh;
 }
 .board h1 {
   font-weight: bold;
-	text-align: center;
-	color: #F4F6F1;
-	font-size: 4em;
-	padding: 20px;
+  text-align: center;
+  color: #F4F6F1;
+  font-size: 4em;
+  padding: 20px;
   margin: 40px;
 }
 h1 span {
@@ -27,91 +80,70 @@ h1 span {
 }
 .column-container {
   display: flex;
-	justify-content: flex-start;
-  align-items: center;
   flex-wrap: wrap;
 	overflow: auto;
 }
-button.create-column {
-	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-  display: flex;
-  margin: 20px auto;
-  background: transparent;
-  border: 2px solid #E13434;
-  color: #F4F6F1;
-  font-size: 20px;
-  padding: 10px 20px;
-  cursor: pointer;
 
-}
+
+/* COLUMN */
 .column {
-	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-	overflow: auto;
-	flex-wrap: wrap;
-  display: flex;
-  align-items: flex-start;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
   border: 3px solid #E13434;
   min-height: 400px;
   min-width: 400px;
   margin: 20px auto;
 	border-radius: 2px;
-	transition: ease-in-out, .5s;
+  order: 1;
+  /*min-width: 300px;
+  min-height: 50vh;*/
+  list-style: none;
+  position: relative;
+}
+.column-add-card {
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 5px 8px;
+  display: block;
+}
+
+/* STYLE KARTY */
+.card {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  padding: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.card-list {
+  list-style: none;
+  margin: 5px;
+  padding: 0px;
+}
+.card-description {
+  margin: 14px 18px;
+}
+.card-placeholder {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin: 20px;
+  border: 2px dashed #E13434;
+  background: transparent;
 }
 
 h2.column-title {
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
-  margin: 14px 16px;
-  order: 1;
-  justify-content: flex-start;
-}
-button.add-card {
-	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  border: 2px solid #E13434;
-  background: transparent;
-  color: #F4F6F1;
-  margin: 12px auto;
-  padding: 4px 18px;
-  order: 2;
-  cursor: pointer;
-}
-button.btn-delete {
-	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-  margin: 14px 28px;
-  order: 3;
-  border: 2px solid #F4F6F1;
-  border-radius: 2px;
-  background: transparent;
-  color: #F4F6F1;
-  cursor: pointer;
-}
-ul.column-card-list.ui-sortable {
-  height: 0;
-  width: 0;
+  margin: 22px 40px;
 }
 li.card {
 	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-  display: flex;
   position: relative;
-  top: 80px;
   left: 0;
   margin: 20px;
   width: 360px;
   border: 2px solid #F4F6F1;
-}
-p.card-description {
-  margin: 20px;
-  overflow: auto;
-  height: auto;
-}
-button.btn-delete-2 {
-  cursor: pointer;
-  position: absolute;
-  border: 2px solid #F4F6F1;
-  border-radius: 2px;
-  background: transparent;
-  color: #F4F6F1;
-  top: 8px;
-  right: 12px;
 }
