@@ -2,77 +2,83 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
   background-color: #000000;
   background-image: linear-gradient(160deg, #000000 0%, #3b404e 127%);
   color: #F4F6F1;
 	font-size: 16px;
 	font-family: sans-serif;
+  margin: 0;
 }
 .ui-sortable {
   min-height: 80px;
   padding: 0;
 }
+
+button:active {
+  transform: translateY(2px);
+}
 button.create-column {
-  display: flex;
-	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-  margin: 20px auto;
   background: transparent;
+	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
   border: 2px solid #E13434;
   color: #F4F6F1;
-  font-size: 20px;
-  padding: 10px 20px;
   cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  margin: 20px auto;
+  padding: 10px 20px;
 }
 button.change-name {
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  border: 2px solid #E13434;
   background: transparent;
+  border: 2px solid #E13434;
   color: #F4F6F1;
+  cursor: pointer;
+  font-size: 16px;
   margin: 12px 18px;
   padding: 6px 18px;
   order: 3;
-  cursor: pointer;
+
 }
 button.add-card {
-  float: right;
-	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  border: 2px solid #E13434;
   background: transparent;
+	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  border: 2px solid #E13434;
   color: #F4F6F1;
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
   margin: 12px 18px;
   padding: 6px 18px;
   order: 2;
-  cursor: pointer;
+
 }
 .btn-delete {
-  cursor: pointer;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-  margin: 14px 28px;
+  background: transparent;
+  background-color: rgba(0,0,0,0.4);
   border: 2px solid #F4F6F1;
   border-radius: 2px;
-  background: transparent;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
   color: #F4F6F1;
+  cursor: pointer;
+  height: 22px;
+  margin: 14px 28px;
   position: absolute;
   right: 0;
   top: 0;
   width: 22px;
-  height: 22px;
-  background-color: rgba(0,0,0,0.4);
 }
 /* BOARD */
 .board {
   min-height: 100vh;
 }
 .board h1 {
-  font-weight: bold;
-  text-align: center;
   color: #F4F6F1;
+  font-weight: bold;
   font-size: 4em;
   padding: 20px;
   margin: 40px;
+  text-align: center;
 }
 h1 span {
 	background: #E13434;
@@ -87,23 +93,21 @@ h1 span {
 
 /* COLUMN */
 .column {
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
   border: 3px solid #E13434;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  list-style: none;
+  margin: 20px auto;
+  position: relative;
   min-height: 400px;
   min-width: 400px;
-  margin: 20px auto;
-	border-radius: 2px;
   order: 1;
-  /*min-width: 300px;
-  min-height: 50vh;*/
-  list-style: none;
-  position: relative;
 }
 .column-add-card {
   cursor: pointer;
-  text-decoration: underline;
-  margin: 5px 8px;
   display: block;
+  margin: 5px 8px;
+  text-decoration: underline;
 }
 
 /* STYLE KARTY */
@@ -125,25 +129,24 @@ h1 span {
   margin: 14px 18px;
 }
 .card-placeholder {
+  background: transparent;
   box-sizing: border-box;
+  border: 2px dashed #E13434;
   display: block;
   height: 60px;
   margin: 20px;
-  border: 2px dashed #E13434;
-  background: transparent;
 }
-
 h2.column-title {
-  text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
   margin: 22px 40px;
+  text-transform: uppercase;
 }
 li.card {
+  border: 2px solid #F4F6F1;
 	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-  position: relative;
   left: 0;
   margin: 20px;
+  position: relative;
   width: 360px;
-  border: 2px solid #F4F6F1;
 }
