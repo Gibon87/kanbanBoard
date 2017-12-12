@@ -16,11 +16,9 @@ Drag and drop entire columns<br>
 Used:
 
 JS/jQuery<br>
-AlertifyJS<br>
 Ajax<br>
 API<br>
 Git<br>
-Grunt<br>
 RWD<br>
 CSS<br>
 HTML<br>
