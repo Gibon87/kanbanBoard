@@ -16,7 +16,6 @@ Feel free to:
 <h2>Used:</h2>
 <ul>
   <li>JS/jQuery</li>
-  <li>AlertifyJS</li>
   <li>Ajax</li>
   <li>API</li>
   <li>Git</li>
