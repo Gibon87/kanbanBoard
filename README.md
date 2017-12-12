@@ -1,24 +1,27 @@
-Kanban Board App
+<h1>Kanban Board App</h1>
+<p>Kanban board will help you to remember things and stay more productive. If you can't imagine your life without sticky notes you will appreciate this app. By the way, if you can't live without real sticky notes that means you are a dinosaur. Don't be so ancient ;) </p>
 
-Kanban board will help you to remember things and stay more productive. If you can't imagine your life without sticky notes you will appreciate this app. By the way, if you can't live without real sticky notes that means you are a dinosaur. Don't be so ancient ;)
+<hr>
 
------------
-How to use:
-
+<h2>How to use: </h2>
 Feel free to:
-Add and delete columns (button)<br>
-Add and delete cards (button)<br>
-Move cards inside the column<br>
-Move cards between the columns<br>
-Drag and drop entire columns<br>
+<ul>
+  <li>Add and delete columns (button)</li>
+  <li>Add and delete cards (button)</li>
+  <li>Move cards inside the column</li>
+  <li>Move cards between the columns</li>
+  <li>Drag and drop entire columns</li>
+</ul>
 
--------------
-Used:
+<h2>Used:</h2>
+<ul>
+  <li>JS/jQuery</li>
+  <li>AlertifyJS</li>
+  <li>Ajax</li>
+  <li>API</li>
+  <li>Git</li>
+  <li>CSS</li>
+  <li>HTML</li>
+</ul>
 
-JS/jQuery<br>
-Ajax<br>
-API<br>
-Git<br>
-RWD<br>
-CSS<br>
-HTML<br>
+<hr>
