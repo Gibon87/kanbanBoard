@@ -4,6 +4,9 @@
 <hr>
 
 <h2>How to use: </h2>
+
+Demo: https://gibon87.github.io/kanbanBoard/
+
 Feel free to:
 <ul>
   <li>Add and delete columns (button)</li>
