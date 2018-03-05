@@ -1,11 +1,10 @@
 <h1>Kanban Board App</h1>
 <p>Kanban board will help you to remember things and stay more productive. If you can't imagine your life without sticky notes you will appreciate this app. By the way, if you can't live without real sticky notes that means you are a dinosaur. Don't be so ancient ;) </p>
 
+Demo: https://gibon87.github.io/kanbanBoard/
 <hr>
 
 <h2>How to use: </h2>
-
-Demo: https://gibon87.github.io/kanbanBoard/
 
 Feel free to:
 <ul>
